@@ -50,10 +50,14 @@ header {
   }
   
   .about__me-image {
+    position: absolute;
+    top: -15%;
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
+    width: 120%;
+    height: 120%;
   }
   
   .about__me-image:hover {
