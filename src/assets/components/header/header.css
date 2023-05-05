@@ -121,18 +121,41 @@ header {
   /* ======================= MEDIA QUERIES(MEDIUM DEVICES)==============*/
   @media screen and (max-width: 1024px) {
     header {
-      height: 68vh;
+      height: 90vh;
     }
   }
   
   /* ======================= MEDIA QUERIES(MEDIUM DEVICES)==============*/
   @media screen and (max-width: 600px) {
     header {
-      height: 90vh;
+      height: 60vh;
     }
     .header__socials,
     .scroll__down {
       display: none;
     }
+    .header__container {
+      text-align:left;
+      margin-left: 1rem;
+      margin-top: 14rem;;
+      height: 50%;
+      position: relative;
+    }
+    .about__me-image {
+      position:absolute;
+      top:-20%;
+      right: -5%;
+    }
+    
+  .about__me {
+    position: absolute;
+    top: -80%;
+    right: 36%;
+    width: 30%;
+  }
+  .logo {
+    margin-top: -9rem;
+    margin-left: 1.5rem;
+  }
   }
   
