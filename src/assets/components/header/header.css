@@ -1,17 +1,27 @@
 header {
-    height: 85vh;
+    height: 70vh;
     padding-top: 10rem;
     overflow: hidden;
   }
   
   .header__container {
-    text-align:left;
+    text-align:center;
     margin-left: 17rem;
     margin-top: 11rem;;
     height: 100%;
-    position: relative;
+    position:relative;
   }
 
+  .text-light {
+    position: absolute;
+    left: 0%;
+    top: -25%;
+  }
+  .text-header {
+    position: absolute;
+    left: 0%;
+    top: 2%;
+  }
   
   .reandy {
     color: rgb(0, 125, 183);
@@ -30,6 +40,12 @@ header {
     color: rgb(106, 106, 106);
   }
 
+  @property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+
   .about__me {
     position: absolute;
     top: -10%;
@@ -40,15 +56,30 @@ header {
     aspect-ratio: 1/1;
     border-radius: 2rem;
     background: linear-gradient(
+      var(--rotate)
+      , #0d1861, transparent);
+      position: absolute;
+      z-index: 1;
+      animation: spin 2.5s linear infinite;
+    /* background: linear-gradient(
       45deg,
       transparent,
       var(--color-primary),
       transparent
-    );
+    ); */
     display: grid;
     place-items: center;
   }
-  
+
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
   .about__me-image {
     position: absolute;
     top: -15%;
@@ -57,15 +88,14 @@ header {
     transform: rotate(10deg);
     transition: var(--transition);
     width: 120%;
-    height: 120%;
-  }
-  
   .about__me-image:hover {
     transform: rotate(0);
-  }
+  }}
   /*===============CTA=================*/
   
   .cta {
+    position: absolute;
+    top: 5%;
     margin-top: 2.5rem;
     margin-left: 0rem;
     display: flex;
@@ -112,12 +142,25 @@ header {
   .scroll__down {
     position: absolute;
     right: 2.4rem;
-    bottom: 14rem;
+    bottom: 25rem;
     transform: rotate(90deg);
     font-weight: 200;
     font-size: 0.9rem;
   }
-  
+
+  /* ========================CLOCK================== */
+
+  .clock {
+    position: absolute;
+    top: 12%;
+    left: 11%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(0, 125, 183);
+    font-size: 15px;
+    letter-spacing: 3px;
+
+}
+
   /* ======================= MEDIA QUERIES(MEDIUM DEVICES)==============*/
   @media screen and (max-width: 1024px) {
     header {
@@ -152,7 +195,7 @@ header {
       height: 70vh;
     }
     .header__socials,
-    .scroll__down {
+    .scroll__down, .clock {
       display: none;
     }
     .header__container {

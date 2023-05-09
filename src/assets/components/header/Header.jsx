@@ -3,6 +3,8 @@ import "./header.css";
 import CTA from "./CTA";
 import ME from "../../../assets/img/me_R.png";
 import HeaderSocials from "./HeaderSocials";
+import Clock from "./Clock";
+
 
 const Header = () => {
   return (
@@ -11,6 +13,7 @@ const Header = () => {
           <span className="reandy">Reandy</span>&nbsp;
           <span className="ferdinanto">Ferdinanto</span>
         </h3>
+        <Clock />
       <div className="header__container">
       <h1 className="text-light">
           <span className="reandy">Reandy</span>&nbsp;
