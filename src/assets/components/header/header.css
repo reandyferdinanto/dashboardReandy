@@ -164,35 +164,64 @@ header {
   /* ======================= MEDIA QUERIES(MEDIUM DEVICES)==============*/
   @media screen and (max-width: 1024px) {
     header {
-      height: 50vh;
+      height: 40vh;
     }
     .about__me {
       position: absolute;
-      top: -60%;
-      right: 20%;
+      top: 0%;
+      right: 15%;
       width: 30%;
     }
     .logo {
       margin-top: -8rem;
       margin-left: 3rem;
     }
+
+    .cta {
+      position: absolute;
+      left: -20%;
+      top: 10%
+    }
+
+    .text-header {
+      position: absolute;
+      top: 10%;
+      left: -20%;
+    }
+
+    .text-light {
+      position: absolute;
+      top: -20%;
+      left: -20%;
+    }
+
     .header__socials {
       position:absolute;
-      left: -12%;
-      top: 5%;
+      left: -40%;
+      top: -5%;
     }
     .header__container {
       text-align:left;
-      margin-left: 8rem;
-      margin-top: 15rem;;
-      position: relative;
     }
+
+    .scroll__down {
+      position: absolute;
+      right: 0%;
+      bottom: 70%;
+    }
+
+    .clock {
+      position: absolute;
+      top: 6%;
+      left: 16.5%;
   }
+  }
+
   
   /* ======================= MEDIA QUERIES(MEDIUM DEVICES)==============*/
   @media screen and (max-width: 600px) {
     header {
-      height: 70vh;
+      height: 50vh;
     }
     .header__socials,
     .scroll__down, .clock {
@@ -201,7 +230,7 @@ header {
     .header__container {
       text-align:left;
       margin-left: 1rem;
-      margin-top: 14rem;;
+      margin-top: 17rem;
       height: 50%;
       position: relative;
     }
@@ -213,13 +242,31 @@ header {
     
     .about__me {
       position: absolute;
-      top: -80%;
+      top: -150%;
       right: 32%;
       width: 40%;
     }
     .logo {
       margin-top: -9rem;
       margin-left: 1.5rem;
+    }
+
+    .text-header {
+      position: absolute;
+      top: 20%;
+      left: 0%;
+    }
+
+    .text-light {
+      position: absolute;
+      top: -45%;
+      left: -0%;
+    }
+
+    .cta {
+      position: absolute;
+      top: 20%;
+      left:0%
     }
   }
   
