@@ -230,21 +230,22 @@ header {
     .header__container {
       text-align:left;
       margin-left: 1rem;
-      margin-top: 17rem;
-      height: 50%;
+      margin-top: 10rem;
+      height: 90%;
+      width: 90%;
       position: relative;
     }
     .about__me-image {
-      position:absolute;
+      position: absolute;
       top:-20%;
       right: -5%;
     }
     
     .about__me {
       position: absolute;
-      top: -150%;
+      top: -95%;
       right: 32%;
-      width: 40%;
+      width: 35%;
     }
     .logo {
       margin-top: -9rem;
